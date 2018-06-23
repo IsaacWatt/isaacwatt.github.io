@@ -1,7 +1,8 @@
 /*
   General page styling
 */
-
+$lightblue: rgb(0,77,153);
+$darkgray: rgb(31,31,31);
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +10,7 @@
 }
 
 html {
-  background-color: rgb(31,31,31);
+  background-color: $darkgray;
   opacity: 100%;
   font: normal 16px sans-serif;
 }
@@ -56,6 +57,7 @@ header {
   padding: 20px 100px 0;
   padding-bottom: 20px;
   color: white;
+  background-color: $lightblue;
 
   animation: 1s fadein 0.5s forwards;
   opacity: 0;
@@ -99,7 +101,7 @@ header {
     height: 100%;
     background-size: cover;
     z-index: -1;
-    background-color: rgb(31,31,31);
+    background-color: $darkgray;
   }
 
   h1 {

@@ -44,6 +44,7 @@ header {
   padding: 20px 100px 0;
   padding-bottom: 20px;
   color: white;
+  background-color: #004d99;
   animation: 1s fadein 0.5s forwards;
   opacity: 0; }
   header h2 {
