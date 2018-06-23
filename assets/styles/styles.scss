@@ -1,0 +1,133 @@
+/*
+  General page styling
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: rgb(31,31,31);
+  opacity: 100%;
+  font: normal 16px sans-serif;
+}
+
+nav {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  opacity: 0.75;
+  color: white;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &.btn {
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    background-color: red;
+    opacity: 1;
+  }
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 80px;
+}
+
+/*
+  Header Styling
+*/
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 100px 0;
+  padding-bottom: 20px;
+  color: white;
+
+  animation: 1s fadein 0.5s forwards;
+  opacity: 0;
+
+  h2 {
+    font-family: "Quicksand", sans-serif;
+  }
+
+  nav {
+    display: flex;
+    margin-right: -15px;
+
+    li {
+      margin: 0 15px;
+    }
+  }
+}
+
+@keyframes fadein {
+  100% {
+    opacity: 1;
+  }
+}
+
+/*
+  Hero Styling
+*/
+
+.hero {
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  min-height: 100vh;
+  color: white;
+
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    z-index: -1;
+    background-color: rgb(31,31,31);
+  }
+
+  h1 {
+    font: bold 40px "Open Sans", sans-serif;
+    margin-bottom: 15px;
+  }
+
+  h3 {
+    font: normal 18px "Open Sans", sans-serif;
+    margin-bottom: 40px;
+  }
+
+  a {
+    &.btn {
+      padding: 20px 46px;
+    }
+  }
+}
+
+.hero-content-area {
+  opacity: 0;
+  margin-top: 100px;
+  animation: 1s slidefade 1s forwards;
+}
+
+@keyframes slidefade {
+  100% {
+    opacity: 1;
+    margin: 0;
+  }
+}
