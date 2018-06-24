@@ -6,12 +6,20 @@
   <title>Isaac Watt</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+  <script src="https://cdn.jsdelivr.net/npm/typeit@5.10.1/dist/typeit.min.js"/></script>
+
   <link rel="stylesheet" href="assets/styles/styles.css">
+
 </head>
 <body>
 
   <header>
-    <h2><a href="#">Github</a></h2>
+    <h2>
+      <a href="#"><i class="fab fa-github"></i></a>
+    </h2>
+
       <nav>
         <li><a href="#">About</a></li>
         <li><a href="#">Projects</a></li>
@@ -24,18 +32,26 @@
       </div>
     <div class="hero-content-area">
       <h1>Isaac Watt</h1>
-      <h3>I'm a student at the University of Waterloo majoring in Computer Science and
-          minoring in Statistics.
-      </h3>
-      <a href="#" class="btn">Contact</a>
+      <h3 id="example2"></h3>
+
     </div>
-
-
-  </section>
-
+</section>
 
 
 
 
 </body>
 </html>
+
+
+
+<script>
+
+new TypeIt('#example2', {
+    strings: [" ", "University of Waterloo Student", "Computer Science major / Statistics minor", "Feel free to browse and learn more about me."],
+    speed: 80,
+    breakLines: false,
+    autoStart: false
+});
+
+</script>
