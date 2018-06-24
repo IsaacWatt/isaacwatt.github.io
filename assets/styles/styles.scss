@@ -80,7 +80,6 @@ section p {
   Header Styling
 */
 
-
 header {
   display: flex;
   justify-content: space-between;
@@ -165,8 +164,7 @@ header {
   }
 }
 
-
-/* About section */
+/* Projects section */
 
 .projects {
   .grid {
@@ -182,6 +180,35 @@ header {
     }
     .large {
       flex-basis: 70%;
+    }
+  }
+}
+
+/* About me */
+.about {
+  h3 {
+    font: bold 40px "Open Sans", sans-serif;
+    margin-bottom: 15px;
+  }
+
+  p {
+    font: normal 18px "Open Sans", sans-serif;
+    margin-bottom: 40px;
+  }
+  .grid {
+    li {
+      padding: 50px;
+      flex-basis: 50%;
+      text-align: center;
+
+      i {
+        color: #8c9eff;
+      }
+
+      h4 {
+        font-size: 30px;
+        margin: 25px 0;
+      }
     }
   }
 }

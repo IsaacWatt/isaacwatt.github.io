@@ -120,7 +120,7 @@ header {
   100% {
     opacity: 1;
     margin: 0; } }
-/* About section */
+/* Projects section */
 .projects .grid li {
   height: 350px;
   padding: 20px;
@@ -131,5 +131,22 @@ header {
   flex-basis: 30%; }
 .projects .grid .large {
   flex-basis: 70%; }
+
+/* About me */
+.about h3 {
+  font: bold 40px "Open Sans", sans-serif;
+  margin-bottom: 15px; }
+.about p {
+  font: normal 18px "Open Sans", sans-serif;
+  margin-bottom: 40px; }
+.about .grid li {
+  padding: 50px;
+  flex-basis: 50%;
+  text-align: center; }
+  .about .grid li i {
+    color: #8c9eff; }
+  .about .grid li h4 {
+    font-size: 30px;
+    margin: 25px 0; }
 
 /*# sourceMappingURL=styles.css.map */
