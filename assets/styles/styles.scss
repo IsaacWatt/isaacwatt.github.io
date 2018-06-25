@@ -3,6 +3,8 @@
 */
 $lightblue: rgb(0,77,153);
 $darkgray: rgb(31,31,31);
+$lightgray: rgb(237, 237, 237);
+
 * {
   margin: 0;
   padding: 0;
@@ -55,7 +57,7 @@ section {
 hr {
   width: 250px;
   height: 3px;
-  background-color: #3f51b5;
+  background-color: rgb(0,77,153);
   border: 0;
   margin-bottom: 50px;
 }
@@ -74,7 +76,6 @@ section p {
     margin-bottom: 30px;
     text-align: center;
 }
-
 
 /*
   Header Styling
@@ -113,10 +114,10 @@ header {
 }
 
 /*
-  Hero Styling
+  landing Styling
 */
 
-.hero {
+.landing {
   position: relative;
   justify-content: center;
   text-align: center;
@@ -151,7 +152,7 @@ header {
   }
 }
 
-.hero-content-area {
+.landing-content-area {
   opacity: 0;
   margin-top: 100px;
   animation: 1s slidefade 1s forwards;
@@ -167,6 +168,8 @@ header {
 /* Projects section */
 
 .projects {
+  background-color: $darkgray;
+  color: $lightgray;
   .grid {
     li {
       height: 350px;
@@ -186,15 +189,19 @@ header {
 
 /* About me */
 .about {
+  background-color: $lightgray;
   h3 {
     font: bold 40px "Open Sans", sans-serif;
     margin-bottom: 15px;
+    color: $darkgray
   }
 
   p {
     font: normal 18px "Open Sans", sans-serif;
     margin-bottom: 40px;
+    color: $darkgray
   }
+
   .grid {
     li {
       padding: 50px;
@@ -202,12 +209,13 @@ header {
       text-align: center;
 
       i {
-        color: #8c9eff;
+        color: $lightblue;
       }
 
       h4 {
         font-size: 30px;
         margin: 25px 0;
+        color: $darkgray;
       }
     }
   }

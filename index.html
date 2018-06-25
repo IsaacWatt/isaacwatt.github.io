@@ -3,57 +3,64 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Isaac Watt</title>
+
+  <!-- Styles -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/styles/styles.css">
+
+  <!-- Scripts -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/typeit@5.10.1/dist/typeit.min.js"/></script>
+  <script type="text/javascript" src="assets/scripts/main.js"></script>
 
-  <link rel="stylesheet" href="assets/styles/styles.css">
+  <title>Isaac Watt</title>
 
 </head>
 <body>
 
   <header>
     <h2>
-      <a href="#"><i class="fab fa-github"></i></a>
+      <a href="https://github.com/IsaacWatt"><i class="fab fa-github"></i></a>
     </h2>
 
       <nav>
         <li><a href="#about-section">About</a></li>
-        <li><a href="#">Projects</a></li>
+        <li><a href="#projects-section">Projects</a></li>
         <li><a href="#">Resume</a></li>
       </nav>
+
   </header>
 
-  <section class="hero">
-    <div class="background-image">
-      </div>
-    <div class="hero-content-area">
+  <section class="landing">
+    <div class="background-image"></div>
+    <div class="landing-content-area">
       <h1>Isaac Watt</h1>
       <h3 id="example2"></h3>
+  </section>
 
-    </div>
-</section>
-
-<section class="about" id="about-section" style="background: lightgray;">
+<section class="about" id="about-section">
   <h3 class="title">About Me</h3>
-  <p>About me information</p>
+  <p>
+    My name is Isaac, I am an aspiring software developer and entrepreneur.
+  </p>
   <hr>
   <ul class="grid">
     <li>
-      <i class="fa fa-compass fa-4x"></i>
-      <h4>Item</h4>
-      <p> Text</p>
+      <i class="fas fa-code fa-4x"></i>
+      <h4>Technologies</h4>
+      <p>
+      <p>
     </li>
     <li>
-      <i class="fa fa-compass fa-4x"></i>
-      <h4>Item</h4>
-      <p>Text</p>
+      <i class="fas fa-coffee fa-4x"></i>
+      <h4>Lifelong Learner</h4>
+      <p>
+      </p>
     </li>
     <li>
-      <i class="fa fa-compass fa-4x"></i>
+      <i class="fas fa-coffee fa-4x"></i>
       <h4>Item</h4>
       <p>Text</p>
     </li>
@@ -65,57 +72,20 @@
   </ul>
 </section>
 
-<!--
-<section class="projects" style="background: lightgray;">
+<section class="projects" id="projects-section">
   <h3 class="title">Side Projects</h3>
-  <p>Side Projects desc</p>
+  <p>Here are some projects I have been working on recently!</p>
   <hr>
   <ul class="grid">
-    <li class="small" style="background-image: url(assets/img/mountain4.jpg);"></li>
-    <li class="large" style="background-image: url(assets/img/mountain2.jpg);"></li>
-    <li class="large" style="background-image: url(assets/img/mountain3.jpg);"></li>
-    <li class="small" style="background-image: url(assets/img/mountain4.jpg);"></li>
+    <li class="small" style="background-color: red;">
+      <h2>hello</h2>
+      <div style="position: relative; top: 0; height: 20px; width: auto; background-color: blue;" > </div>
+    </li>
+    <li class="small" style="background-image: url(assets/img/mountain2.jpg);"></li>
+    <li class="small" style="background-image: url(assets/img/mountain3.jpg);"></li>
   </ul>
 </section>
--->
+
 
 </body>
 </html>
-
-
-
-<script>
-
-new TypeIt('#example2', {
-    strings: [" ", "University of Waterloo Student", "Computer Science major / Statistics minor", "Feel free to browse and learn more about me."],
-    speed: 80,
-    breakLines: false,
-    autoStart: false
-});
-
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
-
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-});
-
-</script>
