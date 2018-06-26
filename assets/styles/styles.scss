@@ -11,7 +11,7 @@ $lightgray: rgb(237, 237, 237);
   box-sizing: border-box;
 }
 
-html {
+body {
   background-color: $darkgray;
   opacity: 100%;
   font: normal 16px sans-serif;
@@ -28,6 +28,8 @@ a {
 
   &:hover {
     opacity: 1;
+    color: white;
+    text-decoration: none;
   }
 
   &.btn {
@@ -57,7 +59,7 @@ section {
 hr {
   width: 250px;
   height: 3px;
-  background-color: rgb(0,77,153);
+  background-color: $lightblue;
   border: 0;
   margin-bottom: 50px;
 }

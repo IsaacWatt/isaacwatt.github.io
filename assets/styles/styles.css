@@ -6,7 +6,7 @@
   padding: 0;
   box-sizing: border-box; }
 
-html {
+body {
   background-color: #1f1f1f;
   opacity: 100%;
   font: normal 16px sans-serif; }
@@ -19,7 +19,9 @@ a {
   opacity: 0.75;
   color: white; }
   a:hover {
-    opacity: 1; }
+    opacity: 1;
+    color: white;
+    text-decoration: none; }
   a.btn {
     border-radius: 4px;
     text-transform: uppercase;
