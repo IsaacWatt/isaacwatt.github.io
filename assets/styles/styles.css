@@ -69,20 +69,39 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 100px 0;
+  padding: 20px 60px 0;
+  padding-left: 30px;
   padding-bottom: 20px;
   color: white;
   background-color: #004d99;
   animation: 1s fadein 0.5s forwards;
   opacity: 0; }
+  header .hamburger {
+    display: none; }
   header h2 {
     font-family: "Quicksand", sans-serif; }
+    header h2 a {
+      padding: 10px; }
+      header h2 a i {
+        padding: 5px; }
   header nav {
     display: flex;
     margin-right: -15px; }
     header nav li {
       margin: 0 15px; }
 
+@media only screen and (max-width: 470px) {
+  li {
+    display: none; }
+
+  button:focus {
+    outline: 0; }
+
+  .hamburger {
+    display: flex !important;
+    color: #ededed !important; }
+    .hamburger span {
+      bottom: 3px; } }
 @keyframes fadein {
   100% {
     opacity: 1; } }

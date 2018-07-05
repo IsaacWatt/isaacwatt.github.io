@@ -87,7 +87,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 100px 0;
+  padding: 20px 60px 0;
+  padding-left: 30px;
   padding-bottom: 20px;
   color: white;
   background-color: $lightblue;
@@ -95,18 +96,48 @@ header {
   animation: 1s fadein 0.5s forwards;
   opacity: 0;
 
+  .hamburger {
+    display: none;
+  }
+
   h2 {
     font-family: "Quicksand", sans-serif;
+    a {
+      padding: 10px;
+      i {
+        padding: 5px;
+      }
+    }
+
   }
 
   nav {
     display: flex;
     margin-right: -15px;
-
     li {
       margin: 0 15px;
     }
   }
+}
+
+@media only screen and (max-width: 470px)  {
+  li {
+    display: none;
+  }
+
+  button:focus {
+    outline:0;
+  }
+
+  .hamburger {
+    display: flex !important;
+    color: $lightgray !important;
+    span {
+      bottom: 3px;
+    }
+  }
+
+
 }
 
 @keyframes fadein {

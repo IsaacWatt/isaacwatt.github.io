@@ -30,4 +30,13 @@ $(document).ready(function(){
       });
     } // End if
   });
+
+  var $hamburger = $(".hamburger");
+  $hamburger.on("click", function(e) {
+  $hamburger.toggleClass("is-active");
+  if ($hamburger.hasClass("is-active")) {
+    
+  }
+  });
+
 });
