@@ -66,15 +66,13 @@ section p {
   Header Styling
 */
 #mobile {
+  border-top: 1px solid #ededed;
+  padding: 10px 0 6px 40px;
   display: none;
-  padding: 10px 60px 0;
-  padding-left: 90px;
-  padding-bottom: 20px;
   color: white;
   background-color: #004d99; }
   #mobile li {
-    padding-left: 10px;
-    padding-right: 10px; }
+    padding: 10px 0 0 0; }
 
 header {
   display: flex;
@@ -102,8 +100,10 @@ header {
       margin: 0 15px; }
 
 @media only screen and (max-width: 470px) {
-  li {
-    display: none; }
+  header {
+    padding-right: 0px; }
+    header li {
+      display: none; }
 
   button:focus {
     outline: 0; }
