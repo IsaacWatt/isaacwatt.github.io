@@ -83,6 +83,20 @@ section p {
   Header Styling
 */
 
+#mobile {
+  li {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  display: none;
+
+  padding: 10px 60px 0;
+  padding-left: 90px;
+  padding-bottom: 20px;
+  color: white;
+  background-color: $lightblue;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -136,8 +150,6 @@ header {
       bottom: 3px;
     }
   }
-
-
 }
 
 @keyframes fadein {

@@ -33,10 +33,24 @@ $(document).ready(function(){
 
   var $hamburger = $(".hamburger");
   $hamburger.on("click", function(e) {
-  $hamburger.toggleClass("is-active");
-  if ($hamburger.hasClass("is-active")) {
-    
-  }
+    $hamburger.toggleClass("is-active");
+    if ($hamburger.hasClass("is-active")) {
+      $(".hello").css('display', 'flex');
+      $("#mobile").css('display', 'flex');
+    } else {
+      $("#mobile").css('display', 'none');
+      //$("li").css('display', 'none');
+      //$(".hello2").css('display', 'none');
+    }
   });
+
+  $(window).on('resize', function(){
+      if ($(".hamburger").css('display') === "none") {
+        $("#mobile").css('display', 'none');
+        $(".hamburger").removeClass("is-active");
+      }
+
+  });
+
 
 });
