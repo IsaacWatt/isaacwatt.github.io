@@ -87,6 +87,9 @@ section p {
   border-top: 1px solid $lightgray;
   padding: 10px 0 6px 40px;
   li {
+    a {
+      font-size: 20px;
+    }
     padding: 10px 0 0 0;
   }
   display: none;
