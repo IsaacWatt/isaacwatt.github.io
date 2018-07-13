@@ -39,6 +39,7 @@
           <span class="hamburger-inner"></span>
         </span>
       </button>
+
   </header>
 
   <div id="mobile">
@@ -62,6 +63,7 @@
     My name is Isaac, I am an aspiring software developer and entrepreneur.
   </p>
   <hr>
+
   <ul class="grid">
     <li>
       <i class="fas fa-code fa-4x"></i>
@@ -121,57 +123,11 @@
   <h3 class="title">Side Projects</h3>
   <p>Here are some projects I have been working on recently!</p>
   <hr>
-  <!--
-  <div class="gallery-container">
-      <div class="tz-gallery">
-          <div class="row">
-              <div class="col-sm-6 col-md-4">
-                  <div class="thumbnail">
-                      <a class="lightbox" href="../images/park.jpg">
-                        <p style="color: red;">content</p>
-                      </a>
-                      <div class="caption">
-                          <h3>Watan</h3>
-                          <p>
-                            A C++ implementation of the popular board game Settlers of Catan.
-                          </p>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-sm-6 col-md-4">
-                  <div class="thumbnail">
-                      <a class="lightbox" href="../images/park.jpg">
-                        <p style="color: red;">content</p>
-                      </a>
-                      <div class="caption">
-                          <h3>Project</h3>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-sm-6 col-md-4">
-                  <div class="thumbnail">
-                      <a class="lightbox" href="../images/park.jpg">
-                        <p style="color: red;">content</p>
-                      </a>
-                      <div class="caption">
-                          <h3>Project</h3>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-
-  </div>
--->
-<div class="container">
     <div class="card-deck">
-
-        <div class="w-100 d-none d-sm-block d-md-none"><!-- wrap every 2 on sm--></div>
-        <div class="w-100 d-none d-lg-block d-xl-none"><!-- wrap every 4 on lg--></div>
+        <div class="w-100 d-none d-sm-block d-md-none"></div>
+        <div class="w-100 d-none d-lg-block d-xl-none"></div>
         <div class="card mb-4">
-            <!-- <img class="card-img-top img-fluid" src="//placehold.it/500x270" alt="Card image cap"> -->
+            <img class="card-img-top img-fluid" src="assets/img/watan-demo.jpg" alt="Card image cap">
             <div class="card-body">
                   <h4 class="card-title" style="text-align: center;">Watan</h4>
                 <p class="card-text">A C++ implementation of the popular board game Settlers of Catan</p>
@@ -196,9 +152,8 @@
           </div>
         </div>
     </div>
-</div>
-
 </section>
+
 
 </body>
 </html>
@@ -209,7 +164,7 @@ strong {
 }
 
 .card {
-  min-width: 250px;
+  min-width: 200px;
 }
 
 .card-title {
@@ -218,6 +173,12 @@ strong {
 
 .card-text {
   color: rgb(31,31,31);
+}
+
+@media only screen and (max-width: 850px)  {
+  .card {
+    min-width: 300px;
+  }
 }
 
 </style>
