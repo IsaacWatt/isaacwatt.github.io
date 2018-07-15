@@ -55,9 +55,13 @@ section {
   flex-wrap: wrap;
   justify-content: center;
 }
-
 hr {
-  width: 250px;
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+hr {
+  width: 50%;
   height: 3px;
   background-color: $lightblue;
   border: 0;
@@ -75,6 +79,7 @@ section p {
     max-width: 775px;
     line-height: 2;
     padding: 0 20px;
+    margin: 0 auto;
     margin-bottom: 30px;
     text-align: center;
 }
