@@ -1,0 +1,60 @@
+body {
+  background-color: #232323;
+  margin: 0;
+  font-family: "Montserrat", "Avenir";
+  text-transform: uppercase; }
+  body h1 {
+    color: white;
+    line-height: 1.1;
+    text-align: center;
+    background-color: #326478;
+    margin: 0;
+    font-weight: normal;
+    padding: 20px 0; }
+    body h1 span {
+      font-size: 200%; }
+  body .colour-square {
+    width: 30%;
+    background-color: green;
+    padding-bottom: 30%;
+    float: left;
+    margin: 1.66%;
+    border-radius: 10%;
+    transition: background-color 0.3s;
+    -webkit-transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s; }
+  body #container {
+    margin: 20px auto;
+    max-width: 600px; }
+  body span {
+    color: white; }
+  body #stripe {
+    background: white;
+    height: 30px;
+    text-align: center; }
+    body #stripe span {
+      color: black;
+      display: inline-block;
+      width: 25%; }
+  body .selected {
+    color: white;
+    background: steelblue; }
+  body button {
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    height: 100%;
+    font-weight: 700;
+    color: steelblue;
+    letter-spacing: 1px;
+    font-size: inherit;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    outline: none; }
+    body button:hover {
+      color: white;
+      background: steelblue;
+      cursor: pointer; }
+
+/*# sourceMappingURL=main.css.map */
