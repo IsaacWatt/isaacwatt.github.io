@@ -203,18 +203,16 @@ header {
   }
   .about-card {
     display: flex;
+    margin: 5px 0;
+  }
+
+  @media screen and (max-width: 767px) {
+    .image {
+      display: none;
+    }
   }
 }
 
-h2 {
-  font: bold 40px "Open Sans", sans-serif;
-  margin-bottom: 15px;
-  border-bottom: 2px solid rgba(187,187,187,.22);
-  text-transform: capitalize;
-  font: bold 32px "Open Sans", sans-serif;
-  margin-bottom: 30px;
-  text-align: center;
-}
 /* other */
 
 .slider-text {
