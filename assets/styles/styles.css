@@ -22,51 +22,12 @@ a {
     opacity: 1;
     color: white;
     text-decoration: none; }
-  a.btn {
-    border-radius: 4px;
-    text-transform: uppercase;
-    font-weight: bold;
-    text-align: center;
-    background-color: red;
-    opacity: 1; }
 
 section {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 100px 80px; }
-
-.grid {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; }
-
-hr {
-  width: 50%;
-  margin: 0 auto;
-  margin-bottom: 30px; }
-
-hr {
-  width: 50%;
-  height: 3px;
-  background-color: #004d99;
-  border: 0;
-  margin-bottom: 50px; }
-
-section h3.title {
-  text-transform: capitalize;
-  font: bold 32px "Open Sans", sans-serif;
-  margin-bottom: 30px;
-  text-align: center; }
-
-section p {
-  max-width: 775px;
-  line-height: 2;
-  padding: 0 20px;
-  margin: 0 auto;
-  margin-bottom: 30px;
-  text-align: center; }
 
 /*
   Header Styling
@@ -133,29 +94,16 @@ header {
   text-align: center;
   min-height: 100vh;
   color: white; }
-  .landing .background-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    z-index: -1;
-    background-color: #1f1f1f; }
   .landing h1 {
     font: bold 40px "Open Sans", sans-serif;
     margin-bottom: 15px; }
   .landing h3 {
     font: normal 18px "Open Sans", sans-serif;
     margin-bottom: 40px; }
-  .landing a.btn {
-    padding: 20px 46px; }
 
-.landing-content-area {
-  opacity: 0;
-  margin-top: 100px;
-  animation: 1s slidefade 1s forwards; }
-
+/*
+  Slide animation on landing
+*/
 @keyframes slidefade {
   100% {
     opacity: 1;
@@ -171,26 +119,96 @@ header {
     background-size: cover;
     background-position: center; }
 
-/* About me */
-.about {
-  background-color: #ededed; }
-  .about h3 {
+/* About me section */
+#about-section {
+  background-color: white;
+  color: #004d99; }
+  #about-section .info, #about-section .image {
+    display: inline-block;
+    text-align: center;
+    padding: 0 10px; }
+  #about-section h2 {
+    padding-bottom: 15px;
     font: bold 40px "Open Sans", sans-serif;
-    margin-bottom: 15px;
-    color: #1f1f1f; }
-  .about p {
-    font: normal 18px "Open Sans", sans-serif;
-    margin-bottom: 40px;
-    color: #1f1f1f; }
-  .about .grid li {
-    padding: 50px;
-    flex-basis: 50%;
+    margin-bottom: 30px;
+    border-bottom: 2px solid rgba(187, 187, 187, 0.22);
+    text-transform: capitalize;
+    font: bold 32px "Open Sans", sans-serif;
+    margin-bottom: 30px;
     text-align: center; }
-    .about .grid li i {
-      color: #004d99; }
-    .about .grid li h4 {
-      font-size: 30px;
-      margin: 25px 0;
-      color: #1f1f1f; }
+    #about-section h2 i {
+      padding-right: 15px; }
+  #about-section .image img {
+    width: 370px;
+    border: 1px solid lightgray;
+    border-radius: 1000px;
+    position: relative;
+    bottom: 50px; }
+  #about-section .about-card {
+    display: flex; }
+
+h2 {
+  font: bold 40px "Open Sans", sans-serif;
+  margin-bottom: 15px;
+  border-bottom: 2px solid rgba(187, 187, 187, 0.22);
+  text-transform: capitalize;
+  font: bold 32px "Open Sans", sans-serif;
+  margin-bottom: 30px;
+  text-align: center; }
+
+/* other */
+.slider-text {
+  border-radius: 5px;
+  background: #1f1f1f;
+  color: #3498db;
+  font-size: 36px;
+  line-height: 100px;
+  margin: 10px;
+  padding: 2%;
+  position: relative;
+  text-align: center; }
+
+.action {
+  display: block;
+  margin: 100px auto;
+  width: 100%;
+  text-align: center; }
+
+.action a {
+  display: inline-block;
+  padding: 5px 10px;
+  background: #f30;
+  color: #fff;
+  text-decoration: none; }
+
+.action a:hover {
+  background: #000; }
+
+strong {
+  color: #004d99; }
+
+/* card styling */
+.card {
+  min-width: 200px;
+  padding: 0;
+  margin-bottom: 30px;
+  background-color: #fff;
+  border-radius: 4px;
+  transition: 0.15s ease-in-out;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06); }
+
+.card-title {
+  color: #004d99; }
+
+.card-text {
+  color: #1f1f1f; }
+
+@media only screen and (max-width: 850px) {
+  .card {
+    min-width: 300px; } }
+.card:hover {
+  transform: translateY(-10px) scale(1.02); }
+
+/* */
 
 /*# sourceMappingURL=styles.css.map */

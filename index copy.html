@@ -61,26 +61,10 @@
       <h3 id="example2"></h3>
   </section>
 
-<section class="about-me" id="about-section">
-  <div class="about-card">
-    <div class="col-md-6 info">
-      <h2><i class="fas fa-briefcase "></i>Technologies</h2>
-      <p>
-        I tend to code things from scratch, and enjoy bringing ideas to life in the browser.
-        My favorite web development tools include <strong>JavaScript</strong>, <strong>CSS</strong> / <strong>SASS</strong>,
-        and <strong>HTML</strong>.
-      </p>
-      <p>
-        Through coursework I have become familiar with imperitive programming in <strong>C</strong>,
-        object oriented programming in <strong>C++</strong> and functional programming in <strong>Racket</strong>.
-      </p>
 
-    </div>
-    <div class="col-md-6 image">
-      <img src="assets/img/cpp.jpg" alt="C++ code">
-    </div>
-  </div>
-  <!--
+  
+<!--
+<section class="about-me" id="about-section">
   <h3 class="title slider-text" style="background-color: transparent; ">About Me</h3>
   <p>
     My name is Isaac, I am an aspiring software developer and entrepreneur.
@@ -145,9 +129,8 @@
       <div><h3 class="slider-text"><i class="fas fas fa-coffee "></i><p style="font-size: 15px; position: relative; bottom: 15px; margin: 0;">Hobbies</p></h3></div>
     </div>
   </div>
--->
 </section>
-
+-->
 <!--
 <section class="about" id="about-section">
   <h3 class="title">About Me</h3>
@@ -251,3 +234,145 @@
 
 </body>
 </html>
+
+<style>
+.section-title {
+  position: absolute;
+  top: 5px;
+  left:0;
+}
+
+@media only screen and (max-width: 750px)  {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+}
+@media only screen and (min-width: 751px)  {
+  .desktop {
+    display: block;
+  }
+  .mobile {
+    display: none;
+  }
+}
+
+div {
+  outline: none;
+}
+
+.about-me{
+  padding-top: 50px;
+  background-color: #ededed;
+  font-family:Arial;
+  width:100%;
+  display:block;
+  margin:0 auto;
+}
+.slider-text {
+    border-radius: 5px;
+    background: #1f1f1f;
+    color: #3498db;
+    font-size: 36px;
+    line-height: 100px;
+    margin: 10px;
+    padding: 2%;
+    position: relative;
+    text-align: center;
+}
+.action{
+  display:block;
+  margin:100px auto;
+  width:100%;
+  text-align:center;
+}
+.action a {
+  display:inline-block;
+  padding:5px 10px;
+  background:#f30;
+  color:#fff;
+  text-decoration:none;
+}
+.action a:hover{
+  background:#000;
+
+}
+strong {
+  color: rgb(0,77,153);
+}
+
+.card {
+  min-width: 200px;
+  padding: 0;
+  margin-bottom: 30px;
+  background-color: #fff;
+  border-radius: 4px;
+  transition: 0.15s ease-in-out;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06);
+}
+
+.card-title {
+  color: rgb(0,77,153);
+}
+
+.card-text {
+  color: rgb(31,31,31);
+}
+
+@media only screen and (max-width: 850px)  {
+  .card {
+    min-width: 300px;
+  }
+}
+.card:hover {
+
+transform: translateY(-10px) scale(1.02);
+}
+
+.slick-list.draggable:first-child {
+  border-radius: 4px;
+  background: #1f1f1f;
+  margin: 10px;
+}
+
+h3.slider-text:hover {
+  cursor: pointer;
+  opacity: 0.9;
+  transition: 0.15s ease-in-out;
+  transform: scale(1.05);
+}
+
+</style>
+
+<script>
+/*
+$(".regular").slick({
+  dots: true,
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 3
+});
+$('.slider-for').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.slider-nav'
+});
+$('.slider-nav').slick({
+  slidesToShow: 3, // change to 2 (700px), or 1
+  slidesToScroll: 1,
+  asNavFor: '.slider-for',
+  dots: true,
+  focusOnSelect: true
+});
+
+$('a[data-slide]').click(function(e) {
+  e.preventDefault();
+  var slideno = $(this).data('slide');
+  $('.slider-nav').slick('slickGoTo', slideno - 1);
+});
+*/
+</script>

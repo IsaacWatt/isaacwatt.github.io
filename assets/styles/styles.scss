@@ -31,15 +31,6 @@ a {
     color: white;
     text-decoration: none;
   }
-
-  &.btn {
-    border-radius: 4px;
-    text-transform: uppercase;
-    font-weight: bold;
-    text-align: center;
-    background-color: red;
-    opacity: 1;
-  }
 }
 
 section {
@@ -47,41 +38,6 @@ section {
   flex-direction: column;
   align-items: center;
   padding: 100px 80px;
-}
-
-.grid {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-hr {
-  width: 50%;
-  margin: 0 auto;
-  margin-bottom: 30px;
-}
-hr {
-  width: 50%;
-  height: 3px;
-  background-color: $lightblue;
-  border: 0;
-  margin-bottom: 50px;
-}
-
-section h3.title {
-    text-transform: capitalize;
-    font: bold 32px "Open Sans", sans-serif;
-    margin-bottom: 30px;
-    text-align: center;
-  }
-
-section p {
-    max-width: 775px;
-    line-height: 2;
-    padding: 0 20px;
-    margin: 0 auto;
-    margin-bottom: 30px;
-    text-align: center;
 }
 
 /*
@@ -177,17 +133,6 @@ header {
   min-height: 100vh;
   color: white;
 
-  .background-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    z-index: -1;
-    background-color: $darkgray;
-  }
-
   h1 {
     font: bold 40px "Open Sans", sans-serif;
     margin-bottom: 15px;
@@ -198,19 +143,11 @@ header {
     margin-bottom: 40px;
   }
 
-  a {
-    &.btn {
-      padding: 20px 46px;
-    }
-  }
 }
 
-.landing-content-area {
-  opacity: 0;
-  margin-top: 100px;
-  animation: 1s slidefade 1s forwards;
-}
-
+/*
+  Slide animation on landing
+*/
 @keyframes slidefade {
   100% {
     opacity: 1;
@@ -219,7 +156,6 @@ header {
 }
 
 /* Projects section */
-
 .projects {
   background-color: $darkgray;
   color: $lightgray;
@@ -234,36 +170,111 @@ header {
   }
 }
 
-/* About me */
-.about {
-  background-color: $lightgray;
-  h3 {
+/* About me section */
+#about-section {
+  background-color: white;
+  color: $lightblue;
+  .info, .image {
+    display: inline-block;
+    text-align: center;
+    padding: 0 10px;
+  }
+  h2 {
+    padding-bottom: 15px;
+    i {
+      padding-right: 15px;
+    }
     font: bold 40px "Open Sans", sans-serif;
-    margin-bottom: 15px;
-    color: $darkgray
+    margin-bottom: 30px;
+    border-bottom: 2px solid rgba(187,187,187,.22);
+    text-transform: capitalize;
+    font: bold 32px "Open Sans", sans-serif;
+    margin-bottom: 30px;
+    text-align: center;
   }
-
-  p {
-    font: normal 18px "Open Sans", sans-serif;
-    margin-bottom: 40px;
-    color: $darkgray
-  }
-
-  .grid {
-    li {
-      padding: 50px;
-      flex-basis: 50%;
-      text-align: center;
-
-      i {
-        color: $lightblue;
-      }
-
-      h4 {
-        font-size: 30px;
-        margin: 25px 0;
-        color: $darkgray;
-      }
+  .image {
+    img {
+      width: 370px;
+      border: 1px solid lightgray;
+      border-radius: 1000px;
+      position: relative;
+      bottom: 50px;
     }
   }
+  .about-card {
+    display: flex;
+  }
 }
+
+h2 {
+  font: bold 40px "Open Sans", sans-serif;
+  margin-bottom: 15px;
+  border-bottom: 2px solid rgba(187,187,187,.22);
+  text-transform: capitalize;
+  font: bold 32px "Open Sans", sans-serif;
+  margin-bottom: 30px;
+  text-align: center;
+}
+/* other */
+
+.slider-text {
+    border-radius: 5px;
+    background: #1f1f1f;
+    color: #3498db;
+    font-size: 36px;
+    line-height: 100px;
+    margin: 10px;
+    padding: 2%;
+    position: relative;
+    text-align: center;
+}
+.action{
+  display:block;
+  margin:100px auto;
+  width:100%;
+  text-align:center;
+}
+.action a {
+  display:inline-block;
+  padding:5px 10px;
+  background:#f30;
+  color:#fff;
+  text-decoration:none;
+}
+.action a:hover{
+  background:#000;
+
+}
+strong {
+  color: rgb(0,77,153);
+}
+
+/* card styling */
+.card {
+  min-width: 200px;
+  padding: 0;
+  margin-bottom: 30px;
+  background-color: #fff;
+  border-radius: 4px;
+  transition: 0.15s ease-in-out;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06);
+}
+
+.card-title {
+  color: rgb(0,77,153);
+}
+
+.card-text {
+  color: rgb(31,31,31);
+}
+
+@media only screen and (max-width: 850px)  {
+  .card {
+    min-width: 300px;
+  }
+}
+.card:hover {
+  transform: translateY(-10px) scale(1.02);
+}
+
+/* */
