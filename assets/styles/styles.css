@@ -153,14 +153,12 @@ header {
     font-size: 20px;
     font-weight: 200; }
   #about-section .image img {
-    width: 370px;
+    width: 310px;
     border: 1px solid lightgray;
-    border-radius: 1000px;
-    position: relative;
-    bottom: 50px; }
+    border-radius: 50%; }
   #about-section .about-card {
     display: flex;
-    margin: 5px 0; }
+    margin: 20px 0; }
   @media screen and (max-width: 767px) {
     #about-section .image {
       display: none; } }
