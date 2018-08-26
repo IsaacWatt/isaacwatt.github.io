@@ -11,11 +11,14 @@
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/styles/styles.css">
   <link rel="stylesheet" href="assets/styles/hamburgers.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 
   <!-- Scripts -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/typeit@5.10.1/dist/typeit.min.js"></script>
   <script type="text/javascript" src="assets/scripts/main.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
   <title>Isaac Watt</title>
 
@@ -62,7 +65,7 @@
 
 
 <section class="about-me" id="about-section">
-  <div class="about-card">
+  <div class="about-card" data-aos="fade-right">
     <div class="col-md-6 info">
       <h2><i class="fas fa-code"></i>Technologies</h2>
       <p>
@@ -76,12 +79,12 @@
       </p>
 
     </div>
-    <div class="col-md-6 image">
+    <div class="col-md-6 image" data-aos="zoom-in">
       <img src="assets/img/cpp.jpg" alt="C++ code">
     </div>
   </div>
-  <div class="about-card">
-    <div class="col-md-6 image">
+  <div class="about-card" data-aos="fade-left">
+    <div class="col-md-6 image" data-aos="zoom-in">
       <img src="assets/img/tree-struct.jpg" alt="C++ code">
     </div>
     <div class="col-md-6 info">
@@ -95,10 +98,9 @@
         keeping up with the latest trends and developments in computer science
         is essential to
       </p>
-
     </div>
   </div>
-  <div class="about-card">
+  <div class="about-card" data-aos="fade-right">
     <div class="col-md-6 info">
       <h2><i class="fas fa-briefcase"></i>Experience</h2>
       <p>
@@ -112,15 +114,15 @@
         and the <strong>City of Brockville</strong>.
       </p>
     </div>
-    <div class="col-md-6 image">
+    <div class="col-md-6 image" data-aos="zoom-in">
       <img src="assets/img/cpp.jpg" alt="C++ code">
     </div>
   </div>
-  <div class="about-card">
-    <div class="col-md-6 image">
+  <div class="about-card" data-aos="fade-left">
+    <div class="col-md-6 image" data-aos="zoom-in">
       <img src="assets/img/tree-struct.jpg" alt="C++ code">
     </div>
-    <div class="col-md-6 info">
+    <div class="col-md-6 info" data-aos="zoom-in">
       <h2><i class="fa fa-coffee"></i>Hobbies</h2>
       <p>
         Aside from programming, I enjoy playing board games
@@ -130,137 +132,7 @@
       </p>
     </div>
   </div>
-  <!--
-  <h3 class="title slider-text" style="background-color: transparent; ">About Me</h3>
-  <p>
-    My name is Isaac, I am an aspiring software developer and entrepreneur.
-  </p>
-  <hr>
-  <div class="main desktop">
-    <div class="slider slider-for">
-        <div class="slider-text" style="font-size: 20px;">
-          <p class="section-title"><i class="fas fa-code "></i></p>
-          <p>
-            I tend to code things from scratch, and enjoy bringing ideas to life in the browser.
-            My favorite web development tools include <strong>JavaScript</strong>, <strong>CSS</strong> / <strong>SASS</strong>,
-            and <strong>HTML</strong>.
-          </p>
-          <p>
-            Through coursework I have become familiar with imperitive programming in <strong>C</strong>,
-            object oriented programming in <strong>C++</strong> and functional programming in <strong>Racket</strong>.
-          </p>
-        </div>
-      <div class="slider-text" style="font-size: 20px;">
-        <p class="section-title"><i class="fas fa-briefcase "></i></p>
-        <p>
-              Through networking and Waterloo's co-op program I have had the opportunity to
-              work with some awesome companies and corporations.
-            </p>
-
-            <p>
-              I have designed front end interfaces,
-              and back end plugins for companies such as <strong>Simplistics</strong>, the <strong>Health Unit</strong>,
-              and the <strong>City of Brockville</strong>.
-            </p>
-      </div>
-      <div class="slider-text" style="font-size: 20px;">
-        <p class="section-title"><i class="fas fa-lightbulb"></i></p>
-        <p>
-          I always challenge myself to understand as much as possible about
-          random topics that interest me from <strong>The Office</strong> trivia to art histroy.
-        </p>
-        <p>
-          This has been essential in my career as a programmer. I believe that
-          keeping up with the latest trends and developments in computer science
-          is essential to
-        </p>
-      </div>
-      <div class="slider-text" style="font-size: 20px;">
-        <p class="section-title"><i class="fas fa-coffee "></i></p>
-        <p>
-          Aside from programming, I enjoy playing board games
-          (<strong>Catan</strong> and <strong>Quoridor</strong> are 2 personal favorites), learning
-          new instruments, and drinking coffee.
-        </p>
-        <p>Nothing better than a summer night around a bon fire with some good friends.</p>
-        <p></p>
-      </div>
-    </div>
-    <div class="slider slider-nav">
-      <div>
-        <h3 class="slider-text"><i class="fas fa-code "></i><p style="font-size: 15px; position: relative; bottom: 15px; margin: 0;">Technologies</p></h3>
-      </div>
-      <div><h3 class="slider-text"><i class="fas fas fa-briefcase "></i><p style="font-size: 15px; position: relative; bottom: 15px; margin: 0;">Experience</p></h3></div>
-      <div><h3 class="slider-text"><i class="fas fas fa-lightbulb "></i><p style="font-size: 15px; position: relative; bottom: 15px; margin: 0;">Lifelong Learner</p></h3></div>
-      <div><h3 class="slider-text"><i class="fas fas fa-coffee "></i><p style="font-size: 15px; position: relative; bottom: 15px; margin: 0;">Hobbies</p></h3></div>
-    </div>
-  </div>
--->
 </section>
-
-<!--
-<section class="about" id="about-section">
-  <h3 class="title">About Me</h3>
-  <p>
-    My name is Isaac, I am an aspiring software developer and entrepreneur.
-  </p>
-  <hr>
-
-  <ul class="grid">
-    <li>
-      <i class="fas fa-code fa-4x"></i>
-      <h4>Technologies</h4>
-      <p>
-        I tend to code things from scratch, and enjoy bringing ideas to life in the browser.
-        My favorite web development tools include <strong>JavaScript</strong>, <strong>CSS</strong> / <strong>SASS</strong>,
-        and <strong>HTML</strong>.
-      </p>
-      <p>
-        Through coursework I have become familiar with imperitive programming in <strong>C</strong>,
-        object oriented programming in <strong>C++</strong> and functional programming in <strong>Racket</strong>.
-      </p>
-
-    </li>
-    <li>
-      <i class="fas fa-briefcase fa-4x"></i>
-      <h4>Experience</h4>
-      <p>
-        Through networking and Waterloo's co-op program I have had the opportunity to
-        work with some awesome companies and corporations.
-      </p>
-
-      <p>
-        I have designed front end interfaces,
-        and back end plugins for companies such as <strong>Simplistics</strong>, the <strong>Health Unit</strong>,
-        and the <strong>City of Brockville</strong>.
-      </p>
-    </li>
-    <li>
-      <i class="fas fa-lightbulb fa-4x"></i>
-      <h4>Lifelong Learner</h4>
-      <p>
-        I always challenge myself to understand as much as possible about
-        random topics that interest me from <strong>The Office</strong> trivia to art histroy.
-      </p>
-      <p>
-        This has been essential in my career as a programmer. I believe that
-        keeping up with the latest trends and developments in computer science
-        is essential to
-      </p>
-    </li>
-    <li>
-      <i class="fa fa-coffee fa-4x"></i>
-      <h4>Hobbies</h4>
-      <p>
-        Aside from programming, I enjoy playing board games
-        (<strong>Catan</strong> and <strong>Quoridor</strong> are 2 personal favorites),
-        learning new instruments, and hanging out with friends around a bon fire. I also
-        enjoy drinking coffee and eating sushi (but not at the same time).
-      </p>
-    </li>
-  </ul>
-</section>
--->
 
 <section class="projects" id="projects-section">
   <h3 class="title">Side Projects</h3>
@@ -301,3 +173,7 @@
 
 </body>
 </html>
+
+<script>
+  AOS.init();
+</script>
