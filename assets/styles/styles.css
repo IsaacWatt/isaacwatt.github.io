@@ -120,6 +120,15 @@ header {
     background-position: center; }
 
 /* About me section */
+#about-intro {
+  background-color: #004d99;
+  color: white;
+  line-height: 2rem; }
+  #about-intro h2, #about-intro p {
+    font-weight: 300; }
+  #about-intro p {
+    font-size: 25px; }
+
 #about-section {
   background-color: white;
   color: #004d99; }
@@ -135,9 +144,14 @@ header {
     text-transform: capitalize;
     font: bold 32px "Open Sans", sans-serif;
     margin-bottom: 30px;
-    text-align: center; }
+    text-align: center;
+    font-weight: 300;
+    font-size: 30px; }
     #about-section h2 i {
       padding-right: 15px; }
+  #about-section p {
+    font-size: 20px;
+    font-weight: 200; }
   #about-section .image img {
     width: 370px;
     border: 1px solid lightgray;

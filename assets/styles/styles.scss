@@ -171,6 +171,18 @@ header {
 }
 
 /* About me section */
+
+#about-intro {
+  background-color: $lightblue;
+  color: white;
+  line-height: 2rem;
+  h2, p {
+    font-weight: 300;
+  }
+  p {
+    font-size: 25px;
+  }
+}
 #about-section {
   background-color: white;
   color: $lightblue;
@@ -191,6 +203,12 @@ header {
     font: bold 32px "Open Sans", sans-serif;
     margin-bottom: 30px;
     text-align: center;
+    font-weight: 300;
+    font-size: 30px;
+  }
+  p {
+    font-size: 20px;
+    font-weight: 200;
   }
   .image {
     img {
