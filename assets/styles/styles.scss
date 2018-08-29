@@ -172,7 +172,7 @@ header {
 
 /* About me section */
 
-#about-intro {
+#about-intro, #side-projects-intro {
   background-color: $lightblue;
   color: white;
   line-height: 2rem;
@@ -210,12 +210,10 @@ header {
     i {
       padding-right: 15px;
     }
-    font: bold 40px "Open Sans", sans-serif;
     margin-bottom: 30px;
     border-bottom: 2px solid rgba(187,187,187,.22);
     text-transform: capitalize;
     font: bold 32px "Open Sans", sans-serif;
-    margin-bottom: 30px;
     text-align: center;
     font-weight: 300;
     font-size: 30px;
@@ -241,6 +239,10 @@ header {
       display: none;
     }
   }
+}
+
+#side-project {
+  background-color: $darkgray;
 }
 
 /* other */
@@ -288,13 +290,6 @@ strong {
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06);
 }
 
-.card-title {
-  color: rgb(0,77,153);
-}
-
-.card-text {
-  color: rgb(31,31,31);
-}
 
 @media only screen and (max-width: 850px)  {
   .card {

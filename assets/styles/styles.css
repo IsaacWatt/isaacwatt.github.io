@@ -120,14 +120,14 @@ header {
     background-position: center; }
 
 /* About me section */
-#about-intro {
+#about-intro, #side-projects-intro {
   background-color: #004d99;
   color: white;
   line-height: 2rem; }
-  #about-intro h2, #about-intro p {
+  #about-intro h2, #about-intro p, #side-projects-intro h2, #side-projects-intro p {
     font-weight: 300;
     text-align: center; }
-  #about-intro p {
+  #about-intro p, #side-projects-intro p {
     font-size: 25px; }
 
 #about-section {
@@ -148,12 +148,10 @@ header {
     transform: translate(-50%, -50%); }
   #about-section h2 {
     padding-bottom: 15px;
-    font: bold 40px "Open Sans", sans-serif;
     margin-bottom: 30px;
     border-bottom: 2px solid rgba(187, 187, 187, 0.22);
     text-transform: capitalize;
     font: bold 32px "Open Sans", sans-serif;
-    margin-bottom: 30px;
     text-align: center;
     font-weight: 300;
     font-size: 30px; }
@@ -172,6 +170,9 @@ header {
   @media screen and (max-width: 767px) {
     #about-section .image {
       display: none; } }
+
+#side-project {
+  background-color: #1f1f1f; }
 
 /* other */
 .slider-text {
@@ -213,12 +214,6 @@ strong {
   border-radius: 4px;
   transition: 0.15s ease-in-out;
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06); }
-
-.card-title {
-  color: #004d99; }
-
-.card-text {
-  color: #1f1f1f; }
 
 @media only screen and (max-width: 850px) {
   .card {
