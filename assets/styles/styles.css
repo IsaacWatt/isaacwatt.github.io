@@ -8,7 +8,6 @@
 
 body {
   background-color: #1f1f1f;
-  opacity: 100%;
   font: normal 16px sans-serif; }
 
 ul, nav {
@@ -171,8 +170,30 @@ header {
     #about-section .image {
       display: none; } }
 
-#side-project {
+#side-projects {
   background-color: #1f1f1f; }
+  #side-projects .card {
+    min-width: 300px !important; }
+  #side-projects .card-title {
+    text-align: center; }
+  #side-projects h5 {
+    font: bold 32px "Open Sans", sans-serif;
+    text-align: center;
+    font-weight: 300;
+    font-size: 25px;
+    color: #004d99; }
+  #side-projects p {
+    font-size: 20px;
+    font-weight: 200; }
+    #side-projects p i {
+      color: black;
+      float: right;
+      font-size: 40px;
+      position: relative;
+      bottom: 17px; }
+      #side-projects p i:hover {
+        cursor: pointer;
+        color: #1f1f1f; }
 
 /* other */
 .slider-text {

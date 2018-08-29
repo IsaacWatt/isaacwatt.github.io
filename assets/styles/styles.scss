@@ -13,7 +13,6 @@ $lightgray: rgb(237, 237, 237);
 
 body {
   background-color: $darkgray;
-  opacity: 100%;
   font: normal 16px sans-serif;
 }
 
@@ -199,11 +198,11 @@ header {
   }
   .image {
       img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-  }
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+      }
   }
   h2 {
     padding-bottom: 15px;
@@ -241,8 +240,36 @@ header {
   }
 }
 
-#side-project {
+#side-projects {
   background-color: $darkgray;
+  .card {
+    min-width: 300px !important;
+  }
+  .card-title {
+    text-align: center;
+  }
+  h5 {
+    font: bold 32px "Open Sans", sans-serif;
+    text-align: center;
+    font-weight: 300;
+    font-size: 25px;
+    color: $lightblue;
+  }
+  p {
+    font-size: 20px;
+    font-weight: 200;
+    i {
+      color: black;
+      float: right;
+      font-size: 40px;
+      position: relative;
+      bottom: 17px;
+      &:hover {
+        cursor: pointer;
+        color: $darkgray;
+      }
+    }
+  }
 }
 
 /* other */
