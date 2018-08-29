@@ -236,6 +236,16 @@ strong {
   transition: 0.15s ease-in-out;
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06); }
 
+.card-body {
+  position: relative; }
+  .card-body p.card-foot {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: calc(100% - 2*1.25rem); }
+  .card-body p.description {
+    padding-bottom: 30px; }
+
 @media only screen and (max-width: 850px) {
   .card {
     min-width: 300px; } }
