@@ -241,10 +241,15 @@ header {
 }
 
 #side-projects {
-  background-color: $darkgray;
-  .card {
-    min-width: 300px !important;
+  @media (min-width: 900px) {
+    .col-md-4 {
+      -ms-flex: 0 0 33.333333%;
+      flex: 0 0 33.333333%;
+      max-width: 33.333333%;
   }
+}
+
+  background-color: $darkgray;
   .card-title {
     text-align: center;
   }
@@ -309,6 +314,7 @@ strong {
 /* card styling */
 .card {
   min-width: 200px;
+  height: 100%;
   padding: 0;
   margin-bottom: 30px;
   background-color: #fff;
@@ -330,12 +336,6 @@ strong {
   }
 }
 
-
-@media only screen and (max-width: 850px)  {
-  .card {
-    min-width: 300px;
-  }
-}
 .card:hover {
   transform: translateY(-10px) scale(1.02);
 }

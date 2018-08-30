@@ -172,8 +172,11 @@ header {
 
 #side-projects {
   background-color: #1f1f1f; }
-  #side-projects .card {
-    min-width: 300px !important; }
+  @media (min-width: 900px) {
+    #side-projects .col-md-4 {
+      -ms-flex: 0 0 33.333333%;
+      flex: 0 0 33.333333%;
+      max-width: 33.333333%; } }
   #side-projects .card-title {
     text-align: center; }
   #side-projects h5 {
@@ -229,6 +232,7 @@ strong {
 /* card styling */
 .card {
   min-width: 200px;
+  height: 100%;
   padding: 0;
   margin-bottom: 30px;
   background-color: #fff;
@@ -246,9 +250,6 @@ strong {
   .card-body p.description {
     padding-bottom: 30px; }
 
-@media only screen and (max-width: 850px) {
-  .card {
-    min-width: 300px; } }
 .card:hover {
   transform: translateY(-10px) scale(1.02); }
 
