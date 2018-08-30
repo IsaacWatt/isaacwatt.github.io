@@ -48,6 +48,7 @@ section {
   padding: 10px 0 6px 40px;
   li {
     a {
+      font-weight: 200;
       font-size: 20px;
     }
     padding: 10px 0 0 0;
@@ -75,17 +76,16 @@ header {
   }
 
   h2 {
-    font-family: "Quicksand", sans-serif;
     a {
       padding: 10px;
       i {
         padding: 5px;
       }
     }
-
   }
 
   nav {
+    font-weight: 200;
     display: flex;
     margin-right: -15px;
     li {
@@ -126,6 +126,7 @@ header {
 */
 
 .landing {
+  background-color: $darkgray;
   position: relative;
   justify-content: center;
   text-align: center;
@@ -133,7 +134,8 @@ header {
   color: white;
 
   h1 {
-    font: bold 40px "Open Sans", sans-serif;
+    font-size: 40px;
+    font-weight: 200;
     margin-bottom: 15px;
   }
 
@@ -141,12 +143,12 @@ header {
     font: normal 18px "Open Sans", sans-serif;
     margin-bottom: 40px;
   }
-
 }
 
 /*
   Slide animation on landing
 */
+
 @keyframes slidefade {
   100% {
     opacity: 1;
@@ -154,7 +156,10 @@ header {
   }
 }
 
-/* Projects section */
+/*
+  Projects section
+*/
+
 .projects {
   background-color: $darkgray;
   color: $lightgray;
@@ -169,7 +174,9 @@ header {
   }
 }
 
-/* About me section */
+/*
+  About me section
+*/
 
 #about-intro, #side-projects-intro {
   background-color: $lightblue;

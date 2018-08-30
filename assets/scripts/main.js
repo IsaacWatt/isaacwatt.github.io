@@ -1,9 +1,12 @@
 $(document).ready(function(){
+    $(function() {
+      AOS.init();
+    });
 
   // typewriter text
   new TypeIt('#example2', {
       strings: [" ", "University of Waterloo Student", "Computer Science major / Statistics minor", "Feel free to browse and learn more about me."],
-      speed: 80,
+      speed: 50,
       breakLines: false,
       autoStart: false
   });

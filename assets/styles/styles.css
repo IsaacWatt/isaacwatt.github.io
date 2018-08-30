@@ -40,6 +40,7 @@ section {
   #mobile li {
     padding: 10px 0 0 0; }
     #mobile li a {
+      font-weight: 200;
       font-size: 20px; }
 
 header {
@@ -55,13 +56,12 @@ header {
   opacity: 0; }
   header .hamburger {
     display: none; }
-  header h2 {
-    font-family: "Quicksand", sans-serif; }
-    header h2 a {
-      padding: 10px; }
-      header h2 a i {
-        padding: 5px; }
+  header h2 a {
+    padding: 10px; }
+    header h2 a i {
+      padding: 5px; }
   header nav {
+    font-weight: 200;
     display: flex;
     margin-right: -15px; }
     header nav li {
@@ -88,13 +88,15 @@ header {
   landing Styling
 */
 .landing {
+  background-color: #1f1f1f;
   position: relative;
   justify-content: center;
   text-align: center;
   min-height: 100vh;
   color: white; }
   .landing h1 {
-    font: bold 40px "Open Sans", sans-serif;
+    font-size: 40px;
+    font-weight: 200;
     margin-bottom: 15px; }
   .landing h3 {
     font: normal 18px "Open Sans", sans-serif;
@@ -107,7 +109,9 @@ header {
   100% {
     opacity: 1;
     margin: 0; } }
-/* Projects section */
+/*
+  Projects section
+*/
 .projects {
   background-color: #1f1f1f;
   color: #ededed; }
@@ -118,7 +122,9 @@ header {
     background-size: cover;
     background-position: center; }
 
-/* About me section */
+/*
+  About me section
+*/
 #about-intro, #side-projects-intro {
   background-color: #004d99;
   color: white;
