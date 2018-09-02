@@ -239,6 +239,15 @@ header {
     display: flex;
     margin: 40px 0;
     min-height: 310px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
   }
 
   @media screen and (max-width: 767px) {
@@ -268,9 +277,13 @@ header {
     font-size: 25px;
     color: $lightblue;
   }
+  .card-foot {
+    text-align: left;
+  }
   p {
     font-size: 20px;
     font-weight: 200;
+    text-align: center;
     i {
       color: black;
       float: right;
