@@ -171,7 +171,8 @@ header {
     border-radius: 50%; }
   #about-section .about-card {
     display: flex;
-    margin: 40px 0; }
+    margin: 40px 0;
+    min-height: 310px; }
   @media screen and (max-width: 767px) {
     #about-section .image {
       display: none; } }

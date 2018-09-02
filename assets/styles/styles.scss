@@ -238,6 +238,7 @@ header {
   .about-card {
     display: flex;
     margin: 40px 0;
+    min-height: 310px;
   }
 
   @media screen and (max-width: 767px) {
