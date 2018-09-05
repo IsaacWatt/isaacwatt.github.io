@@ -133,7 +133,7 @@ header {
     font-weight: 300;
     text-align: center; }
   #about-intro p, #side-projects-intro p {
-    font-size: 25px; }
+    font-size: 22px; }
 
 #about-section {
   background-color: white;
@@ -177,9 +177,15 @@ header {
       margin-top: 0; }
     #about-section .about-card:last-child {
       margin-bottom: 0; }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 992px) {
     #about-section .image {
-      display: none; } }
+      display: none; }
+    #about-section .about-card {
+      margin: 30px 0;
+      min-height: 0; }
+    #about-section .info {
+      display: block;
+      height: 100%; } }
 
 #side-projects {
   background-color: #1f1f1f; }
@@ -191,15 +197,14 @@ header {
   #side-projects .card-title {
     text-align: center; }
   #side-projects h5 {
-    font: bold 32px "Open Sans", sans-serif;
     text-align: center;
-    font-weight: 300;
+    font-weight: 100;
     font-size: 25px;
     color: #004d99; }
   #side-projects .card-foot {
     text-align: left; }
   #side-projects p {
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 200;
     text-align: center; }
     #side-projects p i {
@@ -253,6 +258,9 @@ strong {
   border-radius: 4px;
   transition: 0.15s ease-in-out;
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06); }
+
+.project-container {
+  padding-bottom: 30px; }
 
 .card-body {
   position: relative; }
