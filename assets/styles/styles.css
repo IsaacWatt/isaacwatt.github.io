@@ -218,6 +218,13 @@ header {
       #side-projects p i:hover {
         cursor: pointer;
         color: #1f1f1f; }
+  #side-projects img {
+    width: 100%;
+    height: 25vh;
+    object-fit: cover; }
+  @media screen and (max-width: 767px) {
+    #side-projects img {
+      height: auto; } }
 
 /* other */
 .slider-text {
