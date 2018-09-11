@@ -205,14 +205,19 @@ header {
     color: #004d99; }
   #side-projects .card-foot {
     text-align: left; }
+  #side-projects .technologies {
+    display: block;
+    padding-top: 10px;
+    width: 100%; }
   #side-projects p {
     font-size: 17px;
     font-weight: 200;
     text-align: center; }
     #side-projects p i {
+      padding-left: 10px;
       color: black;
       float: right;
-      font-size: 40px;
+      font-size: 30px;
       position: relative;
       bottom: 17px; }
       #side-projects p i:hover {

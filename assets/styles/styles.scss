@@ -290,14 +290,20 @@ header {
   .card-foot {
     text-align: left;
   }
+  .technologies {
+    display: block;
+    padding-top: 10px;
+    width: 100%;
+  }
   p {
     font-size: 17px;
     font-weight: 200;
     text-align: center;
     i {
+      padding-left: 10px;
       color: black;
       float: right;
-      font-size: 40px;
+      font-size: 30px;
       position: relative;
       bottom: 17px;
       &:hover {
