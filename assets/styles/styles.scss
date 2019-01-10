@@ -451,3 +451,34 @@ strong {
     line-height: 1.8;
   }
 }
+
+
+/*experience  */
+.experience {
+  border: none !important;
+  border-radius: 0 !important;
+  width: 60% !important;
+}
+.list-element {
+  strong {
+    font-size: 105%;
+  }
+  font-size: 18px !important;
+}
+ #word-info {
+
+  h2 {
+    font: unset;
+    font-size: 25px;
+    font-weight: 100;
+  }
+
+  text-align: left !important;
+
+  p {
+    color: #1f1f1f;
+    font-size: 15px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+  }
+}
