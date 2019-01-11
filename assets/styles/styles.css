@@ -347,6 +347,12 @@ strong {
   .list-element strong {
     font-size: 105%; }
 
+.experience-card {
+  margin: 0 !important; }
+
+img.experience {
+  transform: translate(-40%, -98%) !important; }
+
 #word-info {
   text-align: left !important; }
   #word-info h2 {
@@ -358,5 +364,12 @@ strong {
     font-size: 15px;
     margin-top: 1px;
     margin-bottom: 1px; }
+  #word-info a {
+    color: #004d99;
+    font-size: 30px;
+    transition: 0.2s ease; }
+    #word-info a:hover {
+      font-size: 34px;
+      color: #007bff; }
 
 /*# sourceMappingURL=styles.css.map */

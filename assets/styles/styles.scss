@@ -465,6 +465,14 @@ strong {
   }
   font-size: 18px !important;
 }
+.experience-card {
+  margin: 0 !important;
+}
+
+img.experience {
+    transform: translate(-40%,-98%) !important;
+}
+
  #word-info {
 
   h2 {
@@ -480,5 +488,15 @@ strong {
     font-size: 15px;
     margin-top: 1px;
     margin-bottom: 1px;
+  }
+
+  a {
+    color: #004d99;
+    font-size: 30px;
+    transition: 0.2s ease;
+    &:hover {
+      font-size: 34px;
+      color: #007bff;
+    }
   }
 }
