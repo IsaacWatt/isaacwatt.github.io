@@ -262,6 +262,9 @@ header {
       display: block;
       height: 100%;
     }
+    .experience-card:not(:first-child):not(:last-child) {
+      margin: 20px 0 !important;
+    }
   }
 }
 
