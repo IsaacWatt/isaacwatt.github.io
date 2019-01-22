@@ -350,7 +350,8 @@ strong {
     font-size: 105%; }
 
 .experience-card {
-  margin: 0 !important; }
+  margin: 0 !important;
+  width: 100%; }
 
 img.experience {
   transform: translate(-40%, -98%) !important; }
