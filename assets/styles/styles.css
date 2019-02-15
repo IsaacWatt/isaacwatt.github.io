@@ -32,9 +32,12 @@ section {
   Header Styling
 */
 #mobile {
+  position: fixed !important;
+  z-index: 1 !important;
+  top: 90px;
+  width: 100% !important;
   border-top: 1px solid #ededed;
   position: relative;
-  top: -20px;
   padding: 10px 0 6px 40px;
   display: none;
   color: white;
@@ -54,8 +57,7 @@ header {
   padding-bottom: 20px;
   color: white;
   background-color: #004d99;
-  animation: 1s fadein 0.5s forwards;
-  opacity: 0; }
+  opacity: 1; }
   header .hamburger {
     display: none; }
   header h2 a {
@@ -78,6 +80,32 @@ header {
     margin-bottom: 8px; }
   .about-card li:last-child {
     margin-bottom: 40px !important; }
+
+.small-header {
+  position: fixed !important;
+  width: 100% !important;
+  z-index: 1 !important;
+  padding-top: 10px !important;
+  padding-bottom: 5px !important;
+  opacity: 0.75 !important; }
+
+#header {
+  position: fixed !important;
+  width: 100% !important;
+  z-index: 1 !important;
+  transition: padding 0.12s linear;
+  -webkit-transition: padding 0.12s linear;
+  -moz-transition: padding 0.12s linear; }
+
+.hamburger {
+  padding: 0 15px !important; }
+
+.mobile-small {
+  position: fixed !important;
+  z-index: 1 !important;
+  top: 65px !important;
+  width: 100% !important;
+  opacity: 0.75 !important; }
 
 @media only screen and (max-width: 640px) {
   header {
