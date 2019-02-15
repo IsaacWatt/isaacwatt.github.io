@@ -65,6 +65,15 @@ $(document).ready(function(){
         $("#mobile").slideUp();
         $(".hamburger").removeClass("is-active");
       }
+  });
 
+  $(window).scroll(function(){
+      if($(document).scrollTop() > $('#about-intro').offset().top) {
+          $('#header').addClass('small-header');
+          $('#mobile').addClass('mobile-small');
+      } else {
+        $('#header').removeClass('small-header');
+        $('#mobile').removeClass('mobile-small');
+      }
   });
 });
