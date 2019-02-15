@@ -45,6 +45,8 @@ section {
 
 #mobile {
   border-top: 1px solid $lightgray;
+  position: relative;
+  top: -20px;
   padding: 10px 0 6px 40px;
   li {
     a {
@@ -94,7 +96,23 @@ header {
   }
 }
 
-@media only screen and (max-width: 470px)  {
+.about-card  {
+  li {
+    list-style: disc !important;
+    font-weight: 300;
+    font-size: 18px;
+    margin-left: 20px;
+    &:not(:last-child) {
+      margin-bottom: 8px;
+    }
+    &:last-child {
+      margin-bottom: 40px !important;
+    }
+  }
+
+}
+
+@media only screen and (max-width: 640px)  {
   header {
     padding-right: 0px;
     li {
@@ -178,7 +196,7 @@ header {
   About me section
 */
 
-#about-intro, #side-projects-intro {
+#about-intro, #side-projects-intro, #hacks {
   background-color: $lightblue;
   color: white;
   line-height: 2rem;
@@ -471,10 +489,9 @@ strong {
 .experience-card {
   margin: 0 !important;
   width: 100%;
-}
-
-img.experience {
-    transform: translate(-40%,-98%) !important;
+  br {
+    line-height: 2;
+  }
 }
 
  #word-info {

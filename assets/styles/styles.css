@@ -33,6 +33,8 @@ section {
 */
 #mobile {
   border-top: 1px solid #ededed;
+  position: relative;
+  top: -20px;
   padding: 10px 0 6px 40px;
   display: none;
   color: white;
@@ -67,7 +69,17 @@ header {
     header nav li {
       margin: 0 15px; }
 
-@media only screen and (max-width: 470px) {
+.about-card li {
+  list-style: disc !important;
+  font-weight: 300;
+  font-size: 18px;
+  margin-left: 20px; }
+  .about-card li:not(:last-child) {
+    margin-bottom: 8px; }
+  .about-card li:last-child {
+    margin-bottom: 40px !important; }
+
+@media only screen and (max-width: 640px) {
   header {
     padding-right: 0px; }
     header li {
@@ -125,14 +137,14 @@ header {
 /*
   About me section
 */
-#about-intro, #side-projects-intro {
+#about-intro, #side-projects-intro, #hacks {
   background-color: #004d99;
   color: white;
   line-height: 2rem; }
-  #about-intro h2, #about-intro p, #side-projects-intro h2, #side-projects-intro p {
+  #about-intro h2, #about-intro p, #side-projects-intro h2, #side-projects-intro p, #hacks h2, #hacks p {
     font-weight: 300;
     text-align: center; }
-  #about-intro p, #side-projects-intro p {
+  #about-intro p, #side-projects-intro p, #hacks p {
     font-size: 22px; }
 
 #about-section {
@@ -352,9 +364,8 @@ strong {
 .experience-card {
   margin: 0 !important;
   width: 100%; }
-
-img.experience {
-  transform: translate(-40%, -98%) !important; }
+  .experience-card br {
+    line-height: 2; }
 
 #word-info {
   text-align: left !important; }
