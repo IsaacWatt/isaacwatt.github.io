@@ -107,7 +107,7 @@ header {
   width: 100% !important;
   opacity: 0.75 !important; }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 750px) {
   header {
     padding-right: 0px; }
     header li {
@@ -168,14 +168,14 @@ header {
 /*
   About me section
 */
-#about-intro, #side-projects-intro, #hacks {
+#about-intro, #side-projects-intro, #hacks, #work-experience {
   background-color: #004d99;
   color: white;
   line-height: 2rem; }
-  #about-intro h2, #about-intro p, #side-projects-intro h2, #side-projects-intro p, #hacks h2, #hacks p {
+  #about-intro h2, #about-intro p, #side-projects-intro h2, #side-projects-intro p, #hacks h2, #hacks p, #work-experience h2, #work-experience p {
     font-weight: 300;
     text-align: center; }
-  #about-intro p, #side-projects-intro p, #hacks p {
+  #about-intro p, #side-projects-intro p, #hacks p, #work-experience p {
     font-size: 22px; }
 
 #about-section {

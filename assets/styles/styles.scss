@@ -145,7 +145,7 @@ header {
   opacity: 0.75 !important;
 }
 
-@media only screen and (max-width: 640px)  {
+@media only screen and (max-width: 750px)  {
   header {
     padding-right: 0px;
     li {
@@ -154,7 +154,7 @@ header {
   }
 
   section {
-    padding: 100px 20px; 
+    padding: 100px 20px;
   }
 
   button:focus {
@@ -233,7 +233,7 @@ header {
   About me section
 */
 
-#about-intro, #side-projects-intro, #hacks {
+#about-intro, #side-projects-intro, #hacks, #work-experience {
   background-color: $lightblue;
   color: white;
   line-height: 2rem;
