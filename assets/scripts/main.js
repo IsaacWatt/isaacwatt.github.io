@@ -20,7 +20,7 @@ $(document).ready(function(){
 
   // typewriter text
   new TypeIt('#example2', {
-      strings: [" ", "University of Waterloo Student", "Computer Science major / Statistics minor", "Feel free to browse and learn more about me."],
+      strings: [" ", "University of Waterloo Student", "Computer Science and Statistics Double Major", "Feel free to browse and learn more about me."],
       speed: 50,
       breakLines: false,
       autoStart: false
